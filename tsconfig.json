@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@db/*": ["./src/shared/db/*"],
+      "@errors/*": ["./src/shared/errors/*"],
+      "@jobs/*": ["./src/shared/jobs/*"],
+      "@lib/*": ["./src/shared/lib/*"],
+      "@apptypes/*": ["./src/shared/types/*"],
+      "@middlewares/*": ["./src/shared/middlewares/*"],
+      "@modules/*": ["./src/modules/*"]
+    },
+    "types": ["node"],
+
+    /* Module resolution */
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "target": "es2025",
+    "lib": ["ES2025"],
+    "rootDir": ".",
+
+    /* Strict type-checking & code quality */
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    /* Module interoperability */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true, // automatically enabled by esModuleInterop
+    "resolvePackageJsonExports": true, // automatically enabled by moduleResolution
+
+    /* Build optimization & outputs */
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/.cache/tsconfig.build.tsbuildinfo",
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "outDir": "./dist"
+  }
+}
